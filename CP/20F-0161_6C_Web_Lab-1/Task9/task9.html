@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pete's Pizza Delivery</title>
+    <style>
+        label, body {
+            text-align: center;
+        }
+        br.group {
+            clear: both;
+        }
+    </style>
+
+   
+</head>
+<body>
+    <!--This is my ninth web page-->
+    <form action="submit">
+        <h1>Pete's Pizza Delivery</h1>
+        <h2>Online Order Form</h2>
+
+        <label for="username">*Name: </label>
+        <input type="text" name="username" id="1" value="" required>
+        <label for="tel">*Tel: </label>
+        <input type="tel" name="tel" id="2" value="" required>
+        <br class="group">
+
+        <label for="address">*Address: </label>
+        <input type="text" name="address" id="3" value="" required>
+        <label for="email">*Email:</label>
+        <input type="email" name="email" id="4" value="" required>
+        <br class="group">
+
+        <label for="town">*Town/city:</label>
+        <input type="text" name="town" id="5" value="" required>
+        <br>
+        <label for="postcode">*Postcode:</label>
+        <input type="text" name="postcode" id="6" value="" required>
+        <br>
+
+        <p>* required fields</p>
+        <br>
+
+        <h3>Topping</h3>
+        <input type="radio" name="Topping" id="1" value="Margherita">
+        <label for="Margherita">Margherita</label>
+        <br>
+        <input type="radio" name="Topping" id="2" value="FourSeasons">
+        <label for="FourSeasons">Four Seasons</label>
+        <br>
+        <input type="radio" name="Topping" id="3" value="MeatFeast">
+        <label for="MeatFeast">Meat Feast</label>
+        <br>
+
+        <h3>Size</h3>
+        <input type="radio" name="Size" id="1" value="small">
+        <label for="small">Small</label>
+        <br>
+        <input type="radio" name="Size" id="2" value="medium">
+        <label for="medium">Medium</label>
+        <br>
+        <input type="radio" name="Size" id="3" value="large">
+        <label for="large">Large</label>
+        <br>
+
+        <h3>Extras</h3>
+        <input type="checkbox" name="Extras" id="1" value="mush">
+        <label for="mush">Mushrooms</label>
+        <br>
+        <input type="checkbox" name="Extras" id="2" value="green">
+        <label for="green">Green peppers</label>
+        <br>
+        <input type="checkbox" name="Extras" id="3" value="anch">
+        <label for="anch">Anchovies</label>
+        <br>
+        <input type="checkbox" name="Extras" id="4" value="cheese">
+        <label for="cheese">Large</label>
+        <br>
+        <br>
+        <br>
+        <label for="time">*Preferred delivery time:</label>
+        <input type="time" name="time" id="9" value="" required> <br>
+        <label for="inst">*Delivery instructions:</label>
+        <input type="text" name="inst" id="10" value="" required> <br><br>
+
+        <input type="submit" name="submit" value="Submit Order">
+    </form>
+</body>
+</html>

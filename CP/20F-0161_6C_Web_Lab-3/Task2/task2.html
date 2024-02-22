@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Task 2</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <br><br><br><br>
+        <button type="button" class="btn" style="background-color: rgb(248, 248, 248);" onclick="alertMessage('Basic button clicked')">Basic</button>
+        <button type="button" class="btn btn-default" style="background-color: rgb(240, 240, 240);border: 1px solid rgb(180, 180, 180);" onclick="alertMessage('Default button clicked')">Default</button>
+        <button type="button" class="btn btn-primary" onclick="alertMessage('Primary button clicked')">Primary</button>
+        <button type="button" class="btn btn-success" onclick="alertMessage('Success button clicked')">Success</button>
+        <button type="button" class="btn btn-info" style="color: white;" onclick="alertMessage('Info button clicked')">Info</button>
+        <button type="button" class="btn btn-warning" style="color: white;" onclick="alertMessage('Warning button clicked')">Warning</button>
+        <button type="button" class="btn btn-danger" onclick="alertMessage('Danger button clicked')">Danger</button>
+        <button type="button" class="btn btn-link" style="text-decoration: none;" onclick="alertMessage('Link button clicked')">Link</button> 
+    </div>
+    <script>
+        function alertMessage(msg) {
+            alert(msg);
+        }
+    </script>
+</body>
+</html>
