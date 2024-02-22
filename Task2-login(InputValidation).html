@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lux Style Awards</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: lavender;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .container-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 75px;
+            padding: 0 20px;
+            background-color: white;
+            border-bottom: 1px solid burlywood;
+        }
+
+        .container-navbar img {
+            height: 50px;
+            width: auto;
+            margin: 0 10px;
+        }
+        
+        .container-login {
+            text-align: center;
+            background-color: white;
+            border-bottom: 1px solid burlywood;
+            padding: 20px;
+        }
+
+        .button-home,
+        .button-login {
+            padding: 10px 20px;
+            background-color: rgb(145, 114, 36);
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .button-login {
+            background-color: white;
+            color: rgb(145, 114, 36);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button-login:hover {
+            background-color: rgb(145, 114, 36);
+            color: white;
+        }
+
+        .container-login1 {
+            background-image: url("C:/Users/Aisha/Desktop/Semester 8/CS-4032 Web Programming/Assignments/Assignment 2/Web_A2_20F-0161_6C/Images/background-login.jpg");
+            text-align: center;
+            padding: 20px;
+            flex: 1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .login-form {
+            max-width: 400px;
+            background-color: transparent;
+            padding: 20px;
+            border: 1px solid rgb(145, 114, 36);
+            opacity: 0;
+            transform: translateX(-100px);
+            animation: slideInFromLeft 1s ease-in-out forwards;
+        }
+
+        @keyframes slideInFromLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"],
+        .login-form input[type="email"],
+        .login-form input[type="tel"]
+         {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid rgb(145, 114, 36);;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: rgb(145, 114, 36);
+        }
+
+        .login-form input::placeholder {
+            color: rgba(145, 114, 36, 0.9);
+        }
+
+        .login-form img {
+            height: 50px;
+            width: auto;
+            margin: 0 10px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(145, 114, 36);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #8b5e2b;
+        }
+
+        .signup-link {
+            display: block;
+            margin-top: 20px;
+            color: rgb(145, 114, 36);
+            text-decoration: none;
+        }
+
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto; 
+        }
+
+        .footer img {
+            height: 30px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .footer a {
+            color: seagreen;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container-navbar {
+                height: auto;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+            .container-navbar img {
+                margin: 10px 0;
+            }
+            .container-login {
+                padding: 10px;
+            }
+            .button-home,
+            .button-login {
+                margin: 10px;
+            }
+            .container-login1 {
+                padding: 10px;
+            }
+            .login-form {
+                max-width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-navbar"> 
+            <a href="https://www.facebook.com/LuxPakistan/" target="_blank"><img src="C:/Users/Aisha/Desktop/Semester 8/CS-4032 Web Programming/Assignments/Assignment 2/Web_A2_20F-0161_6C/Images/facebook_logo1.jpg" alt="Facebook"></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FLuxStylePk" target="_blank"><img src="C:/Users/Aisha/Desktop/Semester 8/CS-4032 Web Programming/Assignments/Assignment 2/Web_A2_20F-0161_6C/Images/twitter_logo1.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/luxstylepk/" target="_blank"><img src="C:/Users/Aisha/Desktop/Semester 8/CS-4032 Web Programming/Assignments/Assignment 2/Web_A2_20F-0161_6C/Images/instagram_logo1.jpg" alt="Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCUjdhbKM8OuXNwbtpnLkt0A" target="_blank"><img src="C:/Users/Aisha/Desktop/Semester 8/CS-4032 Web Programming/Assignments/Assignment 2/Web_A2_20F-0161_6C/Images/youtube_logo1.jpg" alt="Youtube"></a>
+            <a href="Task2-landing(InputValidation).html"><img src="C:\Users\Aisha\Desktop\Semester 8\CS-4032 Web Programming\Assignments\Assignment 2\Web_A2_20F-0161_6C\Images\logo1.png" alt="Logo"></a>
+        </div>
+    </header>
+
+    <div class="container-login">
+        <button class="button-home" onclick="location.href='Task2-landing(InputValidation).html'">Home</button>
+        <button class="button-login" onclick="location.href='Task2-login(InputValidation).html'">Login For Voting</button>
+    </div>
+
+    <div class="container-login1">
+        <div class="login-form">
+            <img src="C:\Users\Aisha\Desktop\Semester 8\CS-4032 Web Programming\Assignments\Assignment 2\Web_A2_20F-0161_6C\Images\logo1.png" alt="Logo">
+            <h2 style="color: rgb(145, 114, 36);font-weight: lighter;">Login</h2>
+            <form id="loginForm" action="login_process.php" method="post">
+                <input type="text" name="username" id="username" placeholder="User Name *"  required>
+                <input type="password" name="password" id="password" placeholder="Password *" required>
+                <button type="submit">Login</button>
+            </form>
+            <a href="Task2-signup(InputValidation).html" class="signup-link">Didn't Have Any Account? Create New Account</a>
+        </div>
+    </div>
+
+    <script>
+        function validateUsername(username) {
+            const regex = /^\S*$/;
+            return regex.test(username);
+        }
+        function validatePassword(password) {
+            return password.length >= 6;
+        }
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (!validateUsername(username)) {
+                alert('Invalid username! Username must not have any space.');
+                event.preventDefault;
+                return false;
+            }
+            if (!validatePassword(password)) {
+                alert('Invalid password! Username must be having atleast 6 letters.');
+                event.preventDefault;
+                return false;
+            }
+        });
+    </script>
+
+    <footer>
+        <div class="footer">
+            <img src="C:\Users\Aisha\Desktop\Semester 8\CS-4032 Web Programming\Assignments\Assignment 2\Web_A2_20F-0161_6C\Images\logo1.png" alt="Logo">
+            <p>© 2024 LUX, UNILEVER PAKISTAN LIMITED. ALL RIGHTS RESERVED</p>
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#cookie-policy">Cookie Policy</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
