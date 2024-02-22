@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2: Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 75px;
+            padding: 0 20px;
+            background-color: white;
+            border-bottom: 1px solid burlywood;
+        }
+
+        .container-navbar img {
+            height: 50px;
+            width: auto;
+            margin: 0 10px;
+        }
+
+        .container-login {
+            text-align: center;
+            background-color: white;
+            border-bottom: 1px solid burlywood;
+            padding: 20px;
+        }
+
+        .button-home,
+        .button-login {
+            padding: 10px 20px;
+            background-color: rgb(145, 114, 36);
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .button-login {
+            background-color: white;
+            color: rgb(145, 114, 36);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button-login:hover {
+            background-color: rgb(145, 114, 36);
+            color: white;
+        }
+
+        .container-image {
+            background-color: white;
+            border-bottom: 1px solid burlywood;
+        }
+
+        .container-image img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        .container-gallery {
+            background-color: lavender;
+            padding: 20px;
+        }
+
+        .container-gallery img {
+            width: 30%; 
+            height: auto; 
+            margin: 10px;
+            
+        }
+
+        .footer {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer img {
+            height: 30px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .footer a {
+            color: seagreen;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container-navbar {
+                height: auto;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+            .container-navbar img {
+                margin: 10px 0;
+            }
+            .container-login {
+                padding: 10px;
+            }
+            .button-home,
+            .button-login {
+                margin: 10px;
+            }
+            .container-login1 {
+                padding: 10px;
+            }
+            .login-form {
+                max-width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body style="background-color: lavender;">
+    <header>
+        <div class="container-navbar"> 
+            <a href="https://www.facebook.com/LuxPakistan/" target="_blank"><img src="C:/Users/Aisha/Desktop/Semester 8/CS-4032 Web Programming/Assignments/Assignment 1/Web_A1_20F-0161_6C/Images/facebook_logo1.jpg" alt="Facebook"></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FLuxStylePk" target="_blank"><img src="C:/Users/Aisha/Desktop/Semester 8/CS-4032 Web Programming/Assignments/Assignment 1/Web_A1_20F-0161_6C/Images/twitter_logo1.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/luxstylepk/" target="_blank"><img src="C:/Users/Aisha/Desktop/Semester 8/CS-4032 Web Programming/Assignments/Assignment 1/Web_A1_20F-0161_6C/Images/instagram_logo1.jpg" alt="Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCUjdhbKM8OuXNwbtpnLkt0A" target="_blank"><img src="C:/Users/Aisha/Desktop/Semester 8/CS-4032 Web Programming/Assignments/Assignment 1/Web_A1_20F-0161_6C/Images/youtube_logo1.jpg" alt="Youtube"></a>
+            <a href="Task2-landing.html"><img src="C:\Users\Aisha\Desktop\Semester 8\CS-4032 Web Programming\Assignments\Assignment 1\Web_A1_20F-0161_6C\Images\logo1.png" alt="Logo"></a>
+            
+        </div>
+    </header>
+
+    <div class="container-login">
+        <button class="button-home" onclick="location.href='Task2-landing.html'">Home</button>
+        <button class="button-login" onclick="location.href='Task2-login.html'">Login For Voting</button>
+    </div>
+
+    <div class="container-image">
+        <img src="C:\Users\Aisha\Desktop\Semester 8\CS-4032 Web Programming\Assignments\Assignment 1\Web_A1_20F-0161_6C\Images\lux.jpg" alt="Lux">
+    </div>
+
+    <div class="container-gallery">
+        <h1 style="font-size:40px;color: rgb(145, 114, 36);text-align: center;">Lux Style Awards</h1>
+        <p style="color: rgb(106, 93, 77);text-align: center;">Catch all the stills from the star-studded events!</p>
+        <img src="C:\Users\Aisha\Desktop\Semester 8\CS-4032 Web Programming\Assignments\Assignment 1\Web_A1_20F-0161_6C\Images\movie.jpg" alt="Movie1">
+        <img src="C:\Users\Aisha\Desktop\Semester 8\CS-4032 Web Programming\Assignments\Assignment 1\Web_A1_20F-0161_6C\Images\movie2.jpg" alt="Movie2">
+        <img src="C:\Users\Aisha\Desktop\Semester 8\CS-4032 Web Programming\Assignments\Assignment 1\Web_A1_20F-0161_6C\Images\movie3.jpg" alt="Movie3">
+    </div>
+
+    <footer>
+        <div class="footer">
+            <img src="C:\Users\Aisha\Desktop\Semester 8\CS-4032 Web Programming\Assignments\Assignment 1\Web_A1_20F-0161_6C\Images\logo1.png" alt="Logo">
+            <p>© 2024 LUX, UNILEVER PAKISTAN LIMITED. ALL RIGHTS RESERVED</p>
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#cookie-policy">Cookie Policy</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+
